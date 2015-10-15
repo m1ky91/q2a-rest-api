@@ -7,10 +7,13 @@ class qa_rest_api_options_admin {
 	}
 
 	function option_default($option) {
-		if ($option == 'plugin_rest_api_permit') {
+		/* 
+		 * Internal security (non for third-party applications)
+		 * 
+		 * if ($option == 'plugin_rest_api_permit') {
 			require_once QA_INCLUDE_DIR . 'qa-app-options.php';
 			return QA_PERMIT_EXPERTS;
-		}
+		} */
 
 		if ($option == 'plugin_rest_api_max_users')
 			return "10";
@@ -45,13 +48,16 @@ class qa_rest_api_options_admin {
 				'ok' => $saved ? 'REST API settings saved' : null,
 
 				'fields' => array (
-						array (
+						/* 
+						 * Internal security (non for third-party applications)
+						 * 
+						 * array (
 								'label' => qa_lang_html('plugin_rest_api/rest_api_allow_use'),
 								'type' => 'select',
 								'value' => @$permitoptions [qa_opt ( 'plugin_rest_api_permit' )],
 								'options' => $permitoptions,
 								'tags' => 'NAME="plugin_rest_api_p_field"'
-						),
+						), */
 
 						array (
 								'label' => qa_lang_html('plugin_rest_api/rest_api_max_users'),

@@ -8,7 +8,7 @@ return array (
 								on its name under the Resource header.',
 		
 		'rest_api_intro_3' => 'This documentation is for our most recent version of the 
-								REST API, version 0.1.',
+								REST API, version 1.',
 		
 		'rest_api_intro_4' => 'REST API are available only to users ^ or with higher 
 								grade.',
@@ -20,6 +20,8 @@ return array (
 		
 		'rest_api_users__users_userid' => 'Load a User.',
 		
+		'rest_api_users__users_range' => 'Load a range of Users.',
+		
 		'rest_api_questions_desc' => 'View question information data such as question id, 
 										title, content, category id, tags, user id, 
 										creation date and answers count.',
@@ -28,12 +30,16 @@ return array (
 		
 		'rest_api_questions__questions_questionid' => 'Load a Question.',
 		
+		'rest_api_questions__questions_range' => 'Load a range of Questions.',
+		
 		'rest_api_answers_desc' => 'View answer information data such as answer id, 
 										question id and content.',
 		
 		'rest_api_answers__answers_' =>	'Load a list of Answers.',
 		
 		'rest_api_answers__answers_answerid' =>	'Load a Answer.',
+		
+		'rest_api_answers__answers_answerid' =>	'Load a range of Answers.',
 		
 		'rest_api_categories_desc' => 'View category information data such as 
 										category id, title and questions count.',
@@ -42,8 +48,8 @@ return array (
 		
 		'rest_api_categories__categories_categoryid' =>	'Load a Category.',
 		
-		'rest_api_tags_desc' => 'View tag information data such as tag id and tag 
-									count.',
+		'rest_api_tags_desc' => 'View tag information data such as tag id, title 
+									and tag count.',
 		
 		'rest_api_tags__tags_' => 'Load a list of Tag.',
 		
